@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
 
-    <title>Minimum Bootstrap HTML Skeleton</title>
+    <title>Dev Test</title>
 
     <!--  -->
 
     <style>
         /*Globals*/
         
-        body {
+        .content-wrapper {
             max-width: 1290px;
             margin: 0 auto;
         }
@@ -32,6 +32,10 @@
         }
         
         .bg-1-color {
+            background-color: rgb(220, 220, 220);
+        }
+        
+        .bg-2-color {
             background-color: rgb(240, 240, 240);
         }
         /*Animation*/
@@ -55,11 +59,6 @@
             /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.1) */
         }
         /*Search Field*/
-        
-        .search-wrapper input[placeholder],
-        [placeholder],
-        *[placeholder] {
-        }
         
         .search-wrapper input[type="search"] {
             background-color: rgb(240, 240, 240);
@@ -90,7 +89,8 @@
             display: block !important;
         }
         
-        .left::before, .bottom::after {
+        .left::before,
+        .bottom::after {
             z-index: 100;
             background-color: rgb(240, 240, 240);
             content: " ";
@@ -141,78 +141,81 @@
 
 <body class="bg-1-color">
 
-    <div class="container padding-sm">
+    <div class="content-wrapper bg-2-color">
 
-        <div class="row">
-            <div class="col-sm-4">
-                <h3>Dev Test</h3>
+        <div class="container padding-sm">
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3>Dev Test</h3>
+                </div>
             </div>
-        </div>
 
-        <hr/>
+            <hr/>
 
-        <div class="row row-flex">
-            <div class="col-xs-4 card-xs">
-                        <img class="img-responsive" src="https://unsplash.it/600/400?image=868" alt="Clouds" />
+            <div class="row row-flex">
+                <div class="col-xs-4 card-xs">
+                    <img class="img-responsive" src="https://unsplash.it/600/400?image=868" alt="city" />
                     <div class="padding-xs ">
                         Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas vel nisl eu magna ultricies tincidunt.
                     </div>
-            </div>
-            <div class="col-xs-4 card-xs">
-                        <img class="img-responsive" src="https://unsplash.it/600/400?image=1011" alt="Windows" />
+                </div>
+                <div class="col-xs-4 card-xs">
+                    <img class="img-responsive" src="https://unsplash.it/600/400?image=1040" alt="Neuschweinstein" />
                     <div class="padding-xs ">
                         Maecenas vel nisl eu magna ultricies tincidunt. Proin pharetra magna magna, a tempus est posuere quis.
                     </div>
-            </div>
-            <div class="col-xs-4 card-xs">
-                        <img class="img-responsive" src="https://unsplash.it/600/400?image=961" alt="Mountains" />
+                </div>
+                <div class="col-xs-4 card-xs">
+                    <img class="img-responsive" src="https://unsplash.it/600/400?image=961" alt="mountains" />
                     <div class="padding-xs ">
                         Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse potenti. Proin suscipit erat at nisi placerat, eget varius ex eleifend.
                     </div>
-            </div>
-        </div>
-        
-        <hr/>
-        
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="search-wrapper">
-                    <input type="search" class="form-control animate" placeholder="Enter a search term">
                 </div>
             </div>
-        </div>
 
-        <hr/>
+            <hr/>
 
-    </div>
-
-    <div class="g-row">
-        <div class="g-col-60">
-            <div class="g-row left ">
-                <div class="g-col-66 bottom left">
-                    <img class="img-responsive b-right" src="https://unsplash.it/600?image=817" alt="Clouds" />
-                </div>
-                <div class="g-col-33 bottom">
-                    <img class="img-responsive b-bottom" src="https://unsplash.it/300/600?image=860" alt="Clouds" />
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="g-row">
-                <div class="g-col-33 left">
-                    <img class="img-responsive" src="https://unsplash.it/300?image=804" alt="Clouds" />
-                </div>
-                <div class="g-col-66">
-                    <img class="img-responsive" src="https://unsplash.it/600/300?image=826" alt="Clouds" />
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="search-wrapper">
+                        <input type="search" class="form-control animate" placeholder="Enter a search term">
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="g-col-40 bottom">
-            <img class="img-responsive" src="https://unsplash.it/600/300?image=821" alt="Clouds" />
-        </div>
-        <div class="g-col-40">
-            <img class="img-responsive" src="https://unsplash.it/600/600?image=819" alt="Clouds" />
+
+            <hr/>
+
         </div>
 
+        <div class="g-row">
+            <div class="g-col-60">
+                <div class="g-row left ">
+                    <div class="g-col-66 bottom left">
+                        <img class="img-responsive b-right" src="https://unsplash.it/600?image=817" alt="bird-eye-view" />
+                    </div>
+                    <div class="g-col-33 bottom">
+                        <img class="img-responsive b-bottom" src="https://unsplash.it/300/600?image=860" alt="bridge" />
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="g-row">
+                    <div class="g-col-33 left">
+                        <img class="img-responsive" src="https://unsplash.it/300?image=804" alt="sleeping driver" />
+                    </div>
+                    <div class="g-col-66">
+                        <img class="img-responsive" src="https://unsplash.it/600/300?image=826" alt="canal" />
+                    </div>
+                </div>
+            </div>
+            <div class="g-col-40 bottom">
+                <img class="img-responsive" src="https://unsplash.it/600/300?image=821" alt="underground" />
+            </div>
+            <div class="g-col-40">
+                <img class="img-responsive" src="https://unsplash.it/600/600?image=819" alt="doors" />
+            </div>
+
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
